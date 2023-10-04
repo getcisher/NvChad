@@ -43,7 +43,7 @@ M.general = {
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
 
     -- new buffer
-    ["<leader>b"] = { "<cmd> enew <CR>", "New buffer" },
+    ["<leader>o"] = { "<cmd> enew <CR>", "New buffer" },
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
     ["<leader>fm"] = {
@@ -214,7 +214,7 @@ M.lspconfig = {
       "Goto next",
     },
 
-    ["<leader>q"] = {
+    ["<leader>d"] = {
       function()
         vim.diagnostic.setloclist()
       end,

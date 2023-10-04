@@ -1,6 +1,6 @@
 local options = {
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
   disable_netrw = true,
@@ -31,8 +31,8 @@ local options = {
     },
   },
   renderer = {
-    root_folder_label = false,
-    highlight_git = false,
+    -- root_folder_label = false,
+    highlight_git = true,
     highlight_opened_files = "none",
 
     indent_markers = {
